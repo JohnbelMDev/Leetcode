@@ -3,7 +3,7 @@ let temp
 for (var i = 0; i < nums.length; i++) {
   nums[i]
   // console.log(nums[i]);
-  if(!nums[i] ) {
+  if(!(nums[i] ) {
     console.log(nums[i]);
   }
 }

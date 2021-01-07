@@ -4,4 +4,4 @@ function lengthOfLastWord(string) {
     return test.length
 }
 
-console.log(test("a "));
+console.log(lengthOfLastWord("Hello World"));
