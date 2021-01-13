@@ -1,15 +1,14 @@
-function test (nums){
-let temp
-for (var i = 0; i < nums.length; i++) {
-  nums[i]
-  // console.log(nums[i]);
-  if(!(nums[i] ) {
-    console.log(nums[i]);
-  }
-}
+//I'm taking an array as my parameter remove the duplicates
+// returning the new of the array that's not a duplicates but only return the length of the array length
 
 
-}
 
 
-console.log(test([1,2,2,3,4,5]));
+var removeDuplicates = function(nums) {
+
+   let removeDuplicateNumber = [...new Set(nums)]
+   return removeDuplicateNumber
+};
+
+
+console.log(removeDuplicates([1,1,2]));
