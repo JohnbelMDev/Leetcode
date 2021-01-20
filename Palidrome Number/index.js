@@ -11,4 +11,4 @@ var isPalindrome = function(x) {
 
 
 };
-console.log(isPalindrome([921]));
+console.log(isPalindrome("racecar"));
