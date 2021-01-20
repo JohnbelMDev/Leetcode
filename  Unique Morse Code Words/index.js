@@ -3,16 +3,16 @@ function letterToMorse(letter){
   let index = letter.toLowerCase().charCodeAt(0) - 97
   return morseCodeArray[index]
 
-
-
 }
 
-function wordToMorse(word){
-  let wordSplit = word.split('')
-  for (var i = 0; i < wordSplit.length; i++) {
-     console.log(letterToMorse(i));
+function wordToMorse(words){
+  let wordSplit = words.toString().split('')
+  let morse = [] ;
+  for (let i = 0; i < wordSplit.length; i++) {
+    morse.push(letterToMorse(wordSplit[i]))
   }
-  console.log(wordSplit);
+  return morse.join('')
+
 }
 
-console.log(wordToMorse('abc'));
+console.log(wordToMorse(['gin']));
