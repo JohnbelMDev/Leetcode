@@ -1,0 +1,3 @@
+var runningSum = function(nums) {
+
+};

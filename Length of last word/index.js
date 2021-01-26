@@ -1,6 +1,5 @@
 function lengthOfLastWord(string) {
-    let test = string.split(' ')
-    console.log(test);
+    let test = string.trim().split(' ')
         test = test[test.length-1]
     return test.length
 }
