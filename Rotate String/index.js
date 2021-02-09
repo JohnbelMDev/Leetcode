@@ -14,7 +14,17 @@
 * @param {string} B
 * @return {boolean}
 */
+
 var rotateString = function(A, B) {
-  A.sort();
-  return B === A
+      let len = A.length, tmp = A
+  if (len < 1) {
+    return len === B.length
+  }
+  for (let i = 0; i < len; i++) {
+    tmp = tmp.slice(1) + tmp[0]
+    if (tmp === B) {
+      return true
+    }
+  }
+  return false
 };
