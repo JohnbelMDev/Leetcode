@@ -4,5 +4,13 @@
 
 
 var runningSum = function(nums) {
-
+  let total =0;
+  let answer = []
+    for (let i = 0; i < nums.length; i++){
+      total += nums[i]
+      answer.push(total)
+      // [6,8,11]
+    }
+    return answer
+    // console.log(total);
 };
