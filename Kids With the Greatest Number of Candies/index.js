@@ -13,17 +13,16 @@
             //inside the array and if it’s    not greater then return true
 
 function kidsWithCandies(candies,extraCandies){
-  let answer = []
-  let smallest
-  const maxCandies = Math.max(...candies);
+  // order of n
+  const maxCandies = Math.max(...candies); //17,4 => [12,17,2,13],4
+  const answer = maxCandies - extraCandies;
   let newArray = []
-    for(let i = 0; i < candies.length; i++){
-    answer.push(candies[i] + extraCandies)
+    for(let i = 0; i <= candies.length-1; i++){
+ //=> [12,17,2,13] =>[16,21,6,7]
+      // newArray.push(candies[i] + extraCandies  >= maxCandies); //[16,21,6,7]=> [false,true,false,false]
+    newArray.push(candies[i] >= answer) //12 >= 13 [false,true,false,false]
     }
-    for (var i = 0; i < answer.length; i++) {
-      newArray.push(answer[i] >= maxCandies);
-    }
-  return newArray
+return newArray
 
 }
 console.log(kidsWithCandies([4,2,1,1,2],1));
