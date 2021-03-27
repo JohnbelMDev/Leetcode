@@ -16,15 +16,21 @@ var i = 0;
 let temp = []
  while (i < arr.length) {
    if (arr[i] === 0) {
+     console.log('bitch',arr[i]);
+     console.log('oh',i);
      temp.push(arr[i])
      // arr.push(temp[])
      // console.log(temp);
      // console.log(i);
-     arr.splice(i, 1);
-
+     arr.splice(i,1);
+   console.log('fucker',arr[i]);
    } else {
      i++;
+     console.log('dkd',i);
+     console.log('hello',arr);
+
    }
+   console.log('heee',i);
  }
  // console.log(// TEMP: );
  console.log(temp);
@@ -35,4 +41,4 @@ let temp = []
 
 };
 
-console.log(moveZeroes([0,1,0,3,12]));
+console.log(moveZeroes([0,1,3,0,12]));
