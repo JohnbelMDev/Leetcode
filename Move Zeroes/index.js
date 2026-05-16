@@ -23,7 +23,7 @@ let temp = []
      // console.log(temp);
      // console.log(i);
      arr.splice(i,1);
-   console.log('fucker',arr[i]);
+   console.log('fill',arr[i]);
    } else {
      i++;
      console.log('dkd',i);
